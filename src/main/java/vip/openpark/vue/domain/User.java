@@ -2,6 +2,8 @@ package vip.openpark.vue.domain;
 
 import java.time.LocalDateTime;
 import javax.persistence.*;
+
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -13,6 +15,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
+@Builder
 @Table(name = "user")
 public class User {
     /**
